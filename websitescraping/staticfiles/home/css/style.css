@@ -1,0 +1,145 @@
+:root{
+    --color-main: #89bbd6;
+    --color-dark: #0f4a8c;
+    --color-darker: #162c3b;
+    --color-grey: #A0B0B0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+#dropdown1 {
+    width: 160px !important;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.main-content {
+    align-self: center;
+    width: 100%;
+    max-width: 1024px;
+    padding: 1rem;
+}
+
+.nav-wrapper {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    padding: 0 1rem;
+    justify-content: space-between;
+    display: flex;
+}
+
+.sidenav li>a {
+    padding:0 2rem !important;
+    color: white !important;
+}
+
+.collapsible-body>ul>li>a {
+    padding: 0 2.5rem !important;
+    font-weight: 400 !important;
+}
+
+.logo-wrapper {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+}
+
+.mobile-logo-wrapper {
+    margin: 1rem 0 0 1rem;
+}
+
+.logo_img {
+    width: 96px;
+    height: 48px;
+}
+
+.default-logo {
+    width: 2rem;
+    height: auto;
+}
+
+.default-icon {
+    width: 5rem;
+    height: auto;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+ion-icon {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.logo_image {
+    margin-left: 0.5rem;
+}
+
+#results-cards {
+    visibility: hidden;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#website-url {
+    flex: 1;
+    padding-right: 3rem;
+    box-sizing: border-box;
+}
+
+#clear-input-icon {
+    position: absolute;
+    top: 20%;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+
+.white-text-input {
+    color: white;
+}
+
+.links-list {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 1rem;
+    & li {
+        margin-right: 1rem;
+    }
+    & ion-icon:hover {
+        transform: scale(1.2);
+        transition: 0.5s ease-in-out;
+    }
+}

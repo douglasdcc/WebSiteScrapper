@@ -1,0 +1,31 @@
+{% load static %}
+<footer class="page-footer teal darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Website Web Scraper</h5>
+          <p class="grey-text text-lighten-4">Simple Web Scraper using Django and Materializecss</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul class="links-list">
+            <li><a class="grey-text text-lighten-3" href="https://bio.link/douglasdcc"><ion-icon name="contact"></ion-icon></a></li>
+            <li><a class="grey-text text-lighten-3" href="https://github.com/douglasdcc"><ion-icon name="logo-github"></ion-icon></a></li>
+            <li><a class="grey-text text-lighten-3" href="#!"><ion-icon name="cloud-circle"></ion-icon></a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/douglas-collar-da-cunha-1185904a/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container footer-container">
+        <div class="footer-content">
+          © {{year}} Douglas Cunha Copyright <img class="logo_image" src="{% static 'home/img/license-MIT-green.svg' %}">
+        </div>
+        <a class="grey-text text-lighten-4 right" href="https://materializecss.com/">
+          Proudly made with
+          <img class="default-logo" src="{% static 'home/img/materialize_logo.png' %}">
+        </a>
+      </div>
+    </div>
+</footer>

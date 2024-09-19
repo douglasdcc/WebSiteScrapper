@@ -1,0 +1,59 @@
+{% load static %}
+<header>
+    <div class="navbar-fixed">
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="https://bio.link/douglasdcc"><ion-icon name="contact"></ion-icon> Contact</a></li>
+            <li class="divider"></li>
+            <li><a href="https://github.com/douglasdcc"><ion-icon name="logo-github"></ion-icon> GitHub</a></li>
+            <li class="divider"></li>
+            <li><a href="#!"><ion-icon name="cloud-circle"></ion-icon> Live Page</a></li>
+            <li class="divider"></li>
+            <li><a href="https://www.linkedin.com/in/douglas-collar-da-cunha-1185904a/"><ion-icon name="logo-linkedin"></ion-icon> LinkedIn</a></li>
+        </ul>
+        <nav>
+            <div class="nav-wrapper teal darken-3">
+                <a class="logo-wrapper" href="https://bio.link/douglasdcc">
+                    <img class="logo_img" src="{% static 'home/img/Logo_DCC3.png' %}">
+                </a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><ion-icon name="menu"></ion-icon></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="#">Second</a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Links<ion-icon name="arrow-dropdown"></ion-icon></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav teal darken-3" id="mobile-demo">
+        <div class="mobile-logo-wrapper">
+            <a class="brand-logo" href="https://bio.link/douglasdcc">
+                <img class="logo_img" src="{% static 'home/img/Logo_DCC3.png' %}">
+            </a>
+        </div>
+
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="#">Second</a></li>
+        <li>
+            <ul class="collapsible collapsible-accordion">
+                <li>
+                    <a class="collapsible-header">Links</a>
+                    <div class="collapsible-body teal darken-3">
+                        <ul id="" class="">
+                            <li><a href="https://bio.link/douglasdcc"><ion-icon name="contact"></ion-icon> Contact</a></li>
+                            <li class="divider"></li>
+                            <li><a href="https://github.com/douglasdcc"><ion-icon name="logo-github"></ion-icon> GitHub</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#!"><ion-icon name="cloud-circle"></ion-icon> Live Page</a></li>
+                            <li class="divider"></li>
+                            <li><a href="https://www.linkedin.com/in/douglas-collar-da-cunha-1185904a/"><ion-icon name="logo-linkedin"></ion-icon> LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+
+    </ul>
+
+    <script src="{% static 'home/js/header_script.js' %}"></script>
+</header>
