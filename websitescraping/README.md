@@ -28,7 +28,7 @@
 ### License
 ---
 
-<p align="center"><img src="image/license-MIT-green.svg"></p>
+<p align="center"><img src="/websitescraping/staticfiles/home/img/license-MIT-green.svg"></p>
 <br/>
 
 ### Author
